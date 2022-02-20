@@ -24,33 +24,6 @@
 --light-pink: #FCEAEC;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */ 
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...}  */
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...}  */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...} 
-
-@mixin for-phone-only {
-  //@media (max-width: 599px) { @content; }
-}
-@mixin for-tablet-portrait-up {
-  //@media (min-width: 600px) { @content; }
-}
-@mixin for-tablet-landscape-up {
-  //@media (min-width: 900px) { @content; }
-}
-@mixin for-desktop-up {
-  //@media (min-width: 1200px) { @content; }
-}
-@mixin for-big-desktop-up {
-  //@media (min-width: 1800px) { @content; }
-}*/
 
 body{
     width: 100vw;
@@ -76,6 +49,9 @@ body{
             @media (max-width: 375px) { 
                 height: 8%;
             }      
+            @media (max-width: 500px) { 
+                height: 10%;
+            }
             ul{
                 left: 0;
                 right: 0;
@@ -93,6 +69,11 @@ body{
                     padding: 0;
                     font-size: large;
                 } 
+                @media (max-width: 500px) { 
+                    margin-top: 6%;
+                    padding: 0;
+                    font-size: 1.3rem;
+                }
                 li .menu {
                     padding: 1rem;
                     text-decoration: none;
@@ -102,8 +83,11 @@ body{
                     @media (max-width: 375px) { 
                         margin: 0rem 0rem 0 0rem;
                         padding: 0;
-                        font-size: large;
                     } 
+                    @media (max-width: 500px) { 
+                        margin: 0rem 0rem 0rem 0rem;
+                        padding: 0.5rem;
+                    }
                 }
                 li a:hover{
                     border-bottom-color: var(--light-pink);
@@ -116,6 +100,12 @@ body{
                     transition: none;
                     user-select: none;
                     @media (max-width: 375px) { 
+                        width: 15%;
+                        margin-top: -2%;
+                        margin-bottom: 0%;
+                        margin-right: 0%;
+                    }
+                    @media (max-width: 500px) { 
                         width: 15%;
                         margin-top: -2%;
                         margin-bottom: 0%;
@@ -136,10 +126,16 @@ body{
                 @media (max-width: 375px) { 
                     grid-template-columns: 20% 60% 20%;
                 }
+                @media (max-width: 500px) { 
+                    grid-template-columns: 20% 60% 20%;
+                }
                 .up{
                     width: 115%;
                     user-select: none;
                     @media (max-width: 375px) { 
+                        width: 400%;
+                    }
+                    @media (max-width: 500px) { 
                         width: 400%;
                     }
                 }
@@ -150,6 +146,11 @@ body{
                         width: 400%;
                         margin-left: -300%;
                         margin-top: 650%;
+                    }
+                    @media (max-width: 500px) { 
+                        width: 400%;
+                        margin-left: -300%;
+                        margin-top: 350%;
                     }
                 }
                 .title{
@@ -162,17 +163,26 @@ body{
                     @media (max-width: 375px) { 
                         padding-top: 140%;
                     }
+                    @media (max-width: 500px) { 
+                        padding-top: 100%;
+                    }
                     >h1{
                         text-transform: uppercase;
                         font-size: 3rem;
                         @media (max-width: 375px) { 
                             font-size: 1.5rem;
                         }
+                        @media (max-width: 500px) { 
+                            font-size: 1.6rem;
+                        }
                     }
                     >p{
                         text-transform: uppercase;
                         font-size: 1.5rem;
                         @media (max-width: 375px) { 
+                            font-size: 1rem;
+                        }
+                        @media (max-width: 500px) { 
                             font-size: 1rem;
                         }
                     }
@@ -195,6 +205,15 @@ body{
                     align-content: center;
                     justify-content: center;
                 }
+                @media (max-width: 500px) { 
+                    width: 100vw;
+                    height: 100vh;                
+                    background-color: var(--light-pink);
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    justify-content: center;
+                }
                 .presentation{
                     padding-top: 25%;
                     text-align: center;
@@ -205,7 +224,12 @@ body{
                     @media (max-width: 375px) {
                         padding-left: 5%;
                         padding-right: 5%;
-                        padding-top: 10%;
+                        font-size: small;
+                    }
+                    @media (max-width: 500px) { 
+                        padding-left: 7%;
+                        padding-right: 7%;
+                        padding-top: 0%;
                         font-size: small;
                     }
                 }
@@ -239,15 +263,36 @@ body{
                     color:var(--blue);
                     text-align: center;
                 }
+                @media (max-width: 500px) { 
+                    width: 90%;
+                    margin-top: 5%;
+                    background-color: white;
+                    margin-left: 5%;
+                    padding-left: 2%;
+                    margin-right: 5%;
+                    padding-right: 2%;
+                    border-radius: 20px;
+                    padding-bottom: 5%; 
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    row-gap: 1%;
+                    color:var(--blue);
+                    text-align: center;
+                }
                 h3{
                     font-family: 'Dream';
                     @media (max-width: 375px) {
+                        font-size: small;
+                    }
+                    @media (max-width: 500px) { 
                         font-size: small;
                     }
                 }
                 p{
                     font-size: 1.5rem;
                 }
+
                 .front-end-img{
                     display: flex;
                     align-content: center;
