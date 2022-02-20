@@ -1,6 +1,6 @@
 /* $breakpoints: (
-    "phone-down": 500px,
-    "tablet-up": 768px,
+    "phone-down": 500px, X
+    "tablet-up": 768px, X
     "tablet-down": 900px,
     "desktop-up": 1024px,
     "desktop-down": 1280px,
@@ -102,6 +102,16 @@ body .container .header ul {
   }
 }
 
+@media (max-width: 768px) {
+  body .container .header ul {
+    left: 0;
+    margin-left: -3%;
+    width: 80%;
+    margin-top: 7%;
+    font-size: 1.5rem;
+  }
+}
+
 body .container .header ul li .menu {
   padding: 1rem;
   text-decoration: none;
@@ -151,8 +161,8 @@ body .container .header ul .logo img {
 
 @media (max-width: 500px) {
   body .container .header ul .logo img {
-    width: 100%;
-    margin-top: -14%;
+    min-width: 90%;
+    margin-top: -25%;
     margin-bottom: 0%;
     margin-right: 0%;
     margin-left: 0%;
@@ -212,6 +222,12 @@ body .container section:nth-child(2) .up {
   }
 }
 
+@media (max-width: 768px) {
+  body .container section:nth-child(2) .up {
+    width: 200%;
+  }
+}
+
 body .container section:nth-child(2) .down {
   padding-top: 77%;
   -webkit-user-select: none;
@@ -225,6 +241,7 @@ body .container section:nth-child(2) .down {
     width: 400%;
     margin-left: -300%;
     margin-top: 650%;
+    display: none;
   }
 }
 
@@ -233,6 +250,17 @@ body .container section:nth-child(2) .down {
     width: 400%;
     margin-left: -300%;
     margin-top: 430%;
+    bottom: 0;
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body .container section:nth-child(2) .down {
+    width: 150%;
+    margin-left: -50%;
+    margin-top: 130%;
+    display: none;
   }
 }
 
@@ -261,6 +289,12 @@ body .container section:nth-child(2) .title {
   }
 }
 
+@media (max-width: 768px) {
+  body .container section:nth-child(2) .title {
+    margin-top: 90%;
+  }
+}
+
 body .container section:nth-child(2) .title > h1 {
   text-transform: uppercase;
   font-size: 3rem;
@@ -275,6 +309,12 @@ body .container section:nth-child(2) .title > h1 {
 @media (max-width: 500px) {
   body .container section:nth-child(2) .title > h1 {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body .container section:nth-child(2) .title > h1 {
+    font-size: 1.8rem;
   }
 }
 
@@ -442,6 +482,18 @@ body .container section:nth-child(3) .programationLearning {
   }
 }
 
+@media (max-width: 768px) {
+  body .container section:nth-child(3) .programationLearning {
+    margin-left: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 0%;
+    row-gap: 0.2%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+  }
+}
+
 body .container section:nth-child(3) .programationLearning h3 {
   font-family: 'Dream';
 }
@@ -455,6 +507,12 @@ body .container section:nth-child(3) .programationLearning h3 {
 @media (max-width: 500px) {
   body .container section:nth-child(3) .programationLearning h3 {
     font-size: small;
+  }
+}
+
+@media (max-width: 768px) {
+  body .container section:nth-child(3) .programationLearning h3 {
+    font-size: medium;
   }
 }
 
@@ -506,6 +564,12 @@ body .container section:nth-child(3) .programationLearning .design-img img {
   }
 }
 
+@media (max-width: 768px) {
+  body .container section:nth-child(3) .programationLearning .design-img img {
+    width: 10%;
+  }
+}
+
 body .container section:nth-child(3) .programationLearning .back-end-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,6 +592,12 @@ body .container section:nth-child(3) .programationLearning .back-end-img img {
   }
 }
 
+@media (max-width: 768px) {
+  body .container section:nth-child(3) .programationLearning .back-end-img img {
+    width: 15%;
+  }
+}
+
 body .container section:nth-child(3) .programationLearning .cms-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -541,6 +611,12 @@ body .container section:nth-child(3) .programationLearning .cms-img {
 body .container section:nth-child(3) .programationLearning .cms-img img {
   width: 10%;
   height: 10%;
+}
+
+@media (max-width: 768px) {
+  body .container section:nth-child(3) .programationLearning .cms-img img {
+    width: 12%;
+  }
 }
 
 body .container section:nth-child(4) {
@@ -588,6 +664,12 @@ body .container section:nth-child(4) .thirdPage .carousel {
   body .container section:nth-child(4) .thirdPage .carousel {
     width: 100%;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body .container section:nth-child(4) .thirdPage .carousel {
+    margin-left: 11%;
   }
 }
 
@@ -645,6 +727,12 @@ body .container section:nth-child(4) .thirdPage .item {
   }
 }
 
+@media (max-width: 768px) {
+  body .container section:nth-child(4) .thirdPage .item {
+    width: 80%;
+  }
+}
+
 body .container section:nth-child(4) .thirdPage .item:hover {
   -webkit-transform: translate3d(0, -10px, 0);
           transform: translate3d(0, -10px, 0);
@@ -696,6 +784,13 @@ body .container section:nth-child(4) .thirdPage .carousel__action {
   }
 }
 
+@media (max-width: 768px) {
+  body .container section:nth-child(4) .thirdPage .carousel__action {
+    width: 80%;
+    padding-bottom: 8%;
+  }
+}
+
 body .container section:nth-child(4) .thirdPage .carousel__action button {
   border-radius: 50px;
   border: 0;
@@ -731,6 +826,12 @@ body .container section:nth-child(5) {
 @media (max-width: 500px) {
   body .container section:nth-child(5) {
     background-size: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  body .container section:nth-child(5) {
+    background-size: 150%;
   }
 }
 
@@ -783,6 +884,10 @@ body .container section:nth-child(5) .container {
   }
 }
 
+body .container section:nth-child(5) .container .cVitae {
+  margin-top: -60%;
+}
+
 body .container section:nth-child(5) .container .cVitae h3 {
   color: var(--light-pink);
   margin-bottom: 10%;
@@ -799,6 +904,7 @@ body .container section:nth-child(5) .container .cVitae h3 {
 
 @media (max-width: 500px) {
   body .container section:nth-child(5) .container .cVitae h3 {
+    padding-top: -20%;
     margin: 25% 5% 10% 5%;
     color: var(--blue);
   }
@@ -914,7 +1020,13 @@ body .footer {
 
 @media (max-width: 500px) {
   body .footer {
-    margin-top: 10%;
+    margin-top: -40%;
+  }
+}
+
+@media (max-width: 768px) {
+  body .footer {
+    margin-top: -20%;
   }
 }
 /*# sourceMappingURL=style.css.map */
