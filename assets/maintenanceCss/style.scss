@@ -1,7 +1,220 @@
-:root{
+@font-face {
+    font-family: 'Eymen';
+    src: url(../font/EymenPro-Light.otf);
+}
 
+:root{
+    --color      : #1C222B;
+    --blue       : #5E72B6;
+    --pink       : #FFD7DB;
+    --background : #ffffff;
+    --font       : 'Eymen'  ;
 }
 
 body{
-    background-color: cornflowerblue;
+    background: var(--background);
+
+    color: var(--color);
+    font-family: var(--font);
+
+    width: 100vw;
+    height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+
+    .background{
+        margin-top: 100px;
+
+        position: fixed;
+
+        z-index: -2;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        filter: blur(6rem);
+
+        .circle1{
+            width: 400px;
+            height: 400px;
+
+            z-index: -10;
+
+            top: 0;
+            right: 0;
+
+            background: var(--blue);
+            border-radius: 50%;
+
+            animation: move1 10s linear infinite;
+
+            @keyframes move1 {
+                0%,
+                100% {
+                    transform: translate(100px);
+                }
+    
+                50% {
+                    transform: translate(200px);
+                }
+            }
+        }
+
+        .circle2{
+            width: 250px;
+            height: 250px;
+
+            z-index: -1;
+
+            background: var(--pink);
+            border-radius: 50%;
+
+            animation: move2 10s linear infinite;
+
+            @keyframes move2 {
+                0%,
+                100% {
+                    transform: translate(20px);
+                }
+    
+                50% {
+                    transform: translate(300px);
+                }
+            }
+        }
+
+        .circle3{
+            width: 250px;
+            height: 250px;
+
+            z-index: -5;
+
+            background: var(--pink);
+            border-radius: 50%;
+
+            animation: move3 10s linear infinite;
+
+            @keyframes move3 {
+                0%,
+                100% {
+                    transform: translateY(-20px);
+                }
+    
+                50% {
+                    transform: translateY(200px);
+                }
+            }
+        }
+
+        .circle4{
+            width: 250px;
+            height: 250px;
+
+            z-index: -10;
+
+            background: var(--blue);
+            border-radius: 50%;
+
+            animation: move4 10s linear infinite;
+
+            @keyframes move4 {
+                0%,
+                100% {
+                    transform: translate(0px);
+                }
+    
+                50% {
+                    transform: translate(-100px);
+                }
+            }
+        }
+       
+        .circle5{
+            width: 150px;
+            height: 150px;
+
+            z-index: -2;
+
+            background: var(--pink);
+            border-radius: 50%;
+
+            animation: move5 10s linear infinite;
+
+            @keyframes move5 {
+                0%,
+                100% {
+                    transform: translateY(0px);
+                }
+    
+                50% {
+                    transform: translateY(-100px);
+                }
+            }
+        }
+
+    }
+
+
+    .container{
+        position: absolute;
+
+        text-align: center;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .icons{
+        position: fixed;
+
+        top: 200px;
+        right: 30px;
+
+        height: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        
+        .link{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+
+            a{
+                z-index: 20;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+    
+                img{
+                    width: 80%;
+                }
+            }
+            // &:hover{
+            //     background-color: #5E72B6;
+            //     filter: blur(2rem);
+            //     border-radius: 50%;
+            // }
+            
+        }
+        
+        
+    }
+    
 }

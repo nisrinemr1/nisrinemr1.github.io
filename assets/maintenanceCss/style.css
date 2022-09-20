@@ -1,3 +1,194 @@
+@font-face {
+  font-family: "Eymen";
+  src: url(../font/EymenPro-Light.otf);
+}
+:root {
+  --color: #1C222B;
+  --blue: #5E72B6;
+  --pink: #FFD7DB;
+  --background: #ffffff;
+  --font: "Eymen" ;
+}
+
 body {
-  background-color: cornflowerblue;
+  background: var(--background);
+  color: var(--color);
+  font-family: var(--font);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+body .background {
+  margin-top: 100px;
+  position: fixed;
+  z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: blur(6rem);
+}
+body .background .circle1 {
+  width: 400px;
+  height: 400px;
+  z-index: -10;
+  top: 0;
+  right: 0;
+  background: var(--blue);
+  border-radius: 50%;
+  -webkit-animation: move1 10s linear infinite;
+          animation: move1 10s linear infinite;
+}
+@-webkit-keyframes move1 {
+  0%, 100% {
+    transform: translate(100px);
+  }
+  50% {
+    transform: translate(200px);
+  }
+}
+@keyframes move1 {
+  0%, 100% {
+    transform: translate(100px);
+  }
+  50% {
+    transform: translate(200px);
+  }
+}
+body .background .circle2 {
+  width: 250px;
+  height: 250px;
+  z-index: -1;
+  background: var(--pink);
+  border-radius: 50%;
+  -webkit-animation: move2 10s linear infinite;
+          animation: move2 10s linear infinite;
+}
+@-webkit-keyframes move2 {
+  0%, 100% {
+    transform: translate(20px);
+  }
+  50% {
+    transform: translate(300px);
+  }
+}
+@keyframes move2 {
+  0%, 100% {
+    transform: translate(20px);
+  }
+  50% {
+    transform: translate(300px);
+  }
+}
+body .background .circle3 {
+  width: 250px;
+  height: 250px;
+  z-index: -5;
+  background: var(--pink);
+  border-radius: 50%;
+  -webkit-animation: move3 10s linear infinite;
+          animation: move3 10s linear infinite;
+}
+@-webkit-keyframes move3 {
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(200px);
+  }
+}
+@keyframes move3 {
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(200px);
+  }
+}
+body .background .circle4 {
+  width: 250px;
+  height: 250px;
+  z-index: -10;
+  background: var(--blue);
+  border-radius: 50%;
+  -webkit-animation: move4 10s linear infinite;
+          animation: move4 10s linear infinite;
+}
+@-webkit-keyframes move4 {
+  0%, 100% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(-100px);
+  }
+}
+@keyframes move4 {
+  0%, 100% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(-100px);
+  }
+}
+body .background .circle5 {
+  width: 150px;
+  height: 150px;
+  z-index: -2;
+  background: var(--pink);
+  border-radius: 50%;
+  -webkit-animation: move5 10s linear infinite;
+          animation: move5 10s linear infinite;
+}
+@-webkit-keyframes move5 {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+@keyframes move5 {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+body .container {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .icons {
+  position: fixed;
+  top: 200px;
+  right: 30px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+body .icons .link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+body .icons .link a {
+  z-index: 20;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+body .icons .link a img {
+  width: 80%;
 }/*# sourceMappingURL=style.css.map */
