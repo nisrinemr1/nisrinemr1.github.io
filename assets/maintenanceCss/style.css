@@ -191,4 +191,10 @@ body .icons .link a {
 }
 body .icons .link a img {
   width: 80%;
+  padding: 4px;
+  border-bottom: 2px solid rgba(137, 43, 226, 0);
+}
+body .icons .link a img:hover {
+  border-bottom: 2px solid var(--blue);
+  transition: border 1s ease;
 }/*# sourceMappingURL=style.css.map */

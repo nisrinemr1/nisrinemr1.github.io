@@ -204,13 +204,16 @@ body{
     
                 img{
                     width: 80%;
+                    padding: 4px;
+                    border-bottom: 2px solid rgba(137, 43, 226, 0);
+
+                    &:hover{
+                        border-bottom: 2px solid var(--blue);
+                        transition: border 1s ease;
+                    }
                 }
+
             }
-            // &:hover{
-            //     background-color: #5E72B6;
-            //     filter: blur(2rem);
-            //     border-radius: 50%;
-            // }
             
         }
         
