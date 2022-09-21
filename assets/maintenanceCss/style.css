@@ -167,7 +167,7 @@ body .container {
   align-items: center;
   justify-content: center;
 }
-body .icons {
+body .container .icons {
   position: fixed;
   top: 200px;
   right: 30px;
@@ -177,24 +177,52 @@ body .icons {
   justify-content: space-around;
   align-items: flex-end;
 }
-body .icons .link {
+body .container .icons .link {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
-body .icons .link a {
+body .container .icons .link a {
   z-index: 20;
   width: 50px;
   height: 50px;
   display: flex;
   justify-content: center;
 }
-body .icons .link a img {
+body .container .icons .link a img {
   width: 80%;
   padding: 4px;
   border-bottom: 2px solid rgba(137, 43, 226, 0);
 }
-body .icons .link a img:hover {
+body .container .icons .link a img:hover {
   border-bottom: 2px solid var(--blue);
   transition: border 1s ease;
+}
+
+@media (max-width: 750px) {
+  body .container .icons {
+    position: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    top: unset;
+    right: unset;
+    height: auto;
+  }
+  body .container .icons .link {
+    display: flex;
+  }
+  body .container .icons .link a {
+    margin: 10px;
+  }
+  body .container .icons .link a img {
+    width: 80%;
+    padding: 4px;
+    border-bottom: 2px solid rgba(137, 43, 226, 0);
+  }
+  body .container .icons .link a img:hover {
+    border-bottom: 2px solid var(--blue);
+    transition: border 1s ease;
+  }
 }/*# sourceMappingURL=style.css.map */
