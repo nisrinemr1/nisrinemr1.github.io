@@ -10,6 +10,12 @@
   --font: "Eymen" ;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: var(--background);
   color: var(--color);
@@ -43,18 +49,18 @@ body .background .circle1 {
 }
 @-webkit-keyframes move1 {
   0%, 100% {
-    transform: translate(100px);
+    transform: translate(-20px);
   }
   50% {
-    transform: translate(200px);
+    transform: translate(100px);
   }
 }
 @keyframes move1 {
   0%, 100% {
-    transform: translate(100px);
+    transform: translate(-20px);
   }
   50% {
-    transform: translate(200px);
+    transform: translate(100px);
   }
 }
 body .background .circle2 {
