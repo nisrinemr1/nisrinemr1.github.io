@@ -255,8 +255,7 @@ body{
                             border-bottom: 2px solid rgba(137, 43, 226, 0);
         
                             &:hover{
-                                border-bottom: 2px solid var(--blue);
-                                transition: border 1s ease;
+                                display: none;
                             }
                         }
         
