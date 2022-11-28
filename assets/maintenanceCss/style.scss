@@ -4,7 +4,7 @@
 }
 
 :root{
-    --color      : #1C222B;
+    --black      : #1C222B;
     --blue       : #5E72B6;
     --pink       : #FFD7DB;
     --background : #ffffff;
@@ -20,7 +20,7 @@
 body{
     background: var(--background);
 
-    color: var(--color);
+    color: var(--black);
     font-family: var(--font);
 
     width: 100vw;
@@ -180,6 +180,44 @@ body{
         align-items: center;
         justify-content: center;
 
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .resume{
+                margin-top: 20px;
+                padding-top: 10px;
+                width: 30%;
+
+                border-radius: 20px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.5s ease-in-out;
+
+
+                .download-icon{
+                    width: 50px;
+                }
+                h3{
+                    
+                    margin-top: 10px;
+                    padding: 5px 5px;
+                    background-color: transparent;
+                }
+                
+            }
+            .resume:hover{
+
+                background-color: #5E72B6;
+                color: #FFD7DB;
+
+            }
+        }
+
 
         .icons{
             position: fixed;
@@ -275,4 +313,9 @@ body{
         
     }
     
+}
+
+a{
+    color: var(--color);
+    text-decoration: none;
 }
