@@ -185,8 +185,47 @@ body{
             flex-direction: column;
             align-items: center;
 
+            .portfolio-links{
+                margin-top: 40px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .p-link{
+
+                    border: 2px solid #5E72B6;
+
+                    background-color: transparent;
+
+                    border-radius: 20px;
+
+                    padding: 15px 20px;
+                    margin: 0 20px;
+
+                    transition: all 0.3s ease-in-out;
+
+                    color: #1C222B;
+
+                    p{
+                        font-size: 1.2rem;
+                        font-weight: bolder;
+                    }
+
+                }
+
+                .p-link:hover{
+                        
+                    background-color: var(--blue);
+                    color: var(--pink);
+
+                    transition: all 0.5s ease-in-out;
+
+                }
+
+            }
+
             .resume{
-                margin-top: 20px;
+                margin-top: 30px;
                 padding-top: 10px;
                 width: 30%;
 
